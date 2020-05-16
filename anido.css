@@ -1,0 +1,32 @@
+body {
+    height: 100%;
+	width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: table;
+}
+
+#proximamente {
+	/*font-family: 'Ubuntu Mono', monospace;*/
+	/*font-family: letter-gothic-std, monospace;
+	font-style: normal;
+	font-weight: 400;*/
+	font-family: 'Cinzel Decorative', cursive;
+
+	display: table-cell;
+	vertical-align: middle;
+
+	height: 100%;
+	width: 100%;
+}
+
+#img_anido{
+	background-image: url(anido.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	height: 600px;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 10%
+}
