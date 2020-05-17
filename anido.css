@@ -1,3 +1,11 @@
+/*@import url('letter-gothic-std');*/
+
+@font-face {
+    font-family: "letter-gothic-std";
+    src: url("./letter-gothic-std/LetterGothicStd.otf");
+}
+
+
 body {
     height: 100%;
 	width: 100%;
@@ -5,6 +13,143 @@ body {
     padding: 0px;
     display: table;
 }
+
+
+
+.cabecera{
+    background-color: #fff;
+    /*font-family: "Alegreya",serif;*/
+    /*font-family: 'Julius Sans One', sans-serif;*/
+    font-family: letter-gothic-std, monospace;
+    font-style: normal;
+    font-weight: 0;
+    /*text-align: center;*/
+    display: table-cell;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.cabecera_cont{
+    padding: 50px 9%;
+    transition: 0.5s;
+    background-color: #ffffff;
+}
+
+#img_nido{
+    background-image: url(nido.png);
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30px;
+    width: 150px;
+    left: 30px;
+    filter: opacity(0.3);
+    transition: 0.5s;
+}
+
+/*#colectivo{
+    width: max-content;
+    transform: translateY(-10px) scale(0.8);
+}
+
+#a-nido{
+    transform: translate(23px,-20px);
+}*/
+
+#colectivo{
+    display: inline;
+}
+
+#a-nido{
+    display: inline;
+}
+
+.titulo {
+    letter-spacing: 2px;
+    font-size: 42px;
+    margin: 0px;
+    transition: 0.8s;
+    display: inline;
+}
+
+.titulo a{
+    text-decoration: none;
+    color: #333;
+    margin: 0px;
+}
+
+.frase{
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.9s;
+    height: 50px;
+    margin: 0px;
+    /*text-align: center;*/
+}
+
+
+.topbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 280px;
+    /*right: 0;
+     width: 300px;
+     height: 100%;*/
+    background-color: #d7eac9;
+    background-blend-mode: multiply;
+    opacity: 0.4;
+}
+
+
+
+/* Nav */
+
+.nav{
+    background-color: #f9b384;
+    border-bottom: 2px solid rgba(0,0,0,.15);
+    display: block;
+    height: 40px;
+    transition: 0.8s;
+    /*display: grid;
+     grid-template-columns: repeat(7,1fr);*/
+    display: flex;
+    padding: 0 200px;
+    align-items: center;
+}
+
+.nav_btn {
+    /*height: 100%;*/
+    /*display: inline-block;*/
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+    transition: 1s;
+    display: table-cell;
+}
+
+.nav_btn :hover {
+    font-weight: 1000;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: #333;
+    transition: 0.7s;
+    margin-top: auto;
+    margin-bottom: auto;
+    /*display: table-cell;
+     vertical-align: middle;*/
+}
+
+
+
+
 
 #proximamente {
 	/*font-family: 'Ubuntu Mono', monospace;*/
@@ -15,6 +160,9 @@ body {
 
 	display: table-cell;
 	vertical-align: middle;
+    
+    position: absolute;
+    top: 200px;
 
 	height: 100%;
 	width: 100%;
@@ -29,4 +177,201 @@ body {
 	margin-left: 30%;
 	margin-right: 30%;
 	margin-top: 10%
+}
+
+
+
+
+/* Texto */
+
+.texto_box{
+    position: absolute;
+    top: 180px;
+    /*padding: 0 5% 0 5%;*/
+    margin: 0 10% 0 10%;
+    background-color: #fff8f1ad;
+}
+
+.texto{
+    padding: 0 10% 0 10%;
+}
+
+.texto-1{
+    padding: 0 10% 0 10%;
+}
+
+.texto-2{
+    padding: 0 10% 0 10%;
+}
+
+#titulo_cont{
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 10px 0 10px;
+}
+
+.subtitulo_cont{
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    padding: 0 10% 0 10%;
+}
+
+h3{
+    /*font-family: 'Julius Sans One', sans-serif;*/
+    /*font-family: 'IM Fell English SC', serif;*/
+    font-family: letter-gothic-std, monospace;
+    /*padding-left: 5%;*/
+}
+
+
+.subtitulo{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#img_1{
+    padding: 5px 10%;
+    /*background-attachment: fixed;*/
+    background-image: url(fotos/cam_3.jpg);
+    background-size: cover;
+    height: 700px;
+    filter: blur(1px) brightness(2);
+    background-color: #f7d9b2;
+    background-blend-mode: luminosity;
+    margin: 50px;
+}
+
+#img_2{
+    padding: 5px 10%;
+    
+    background-image: url(fotos/cam_2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f7d9b2;
+    background-blend-mode: luminosity;
+    filter: blur(1px) brightness(2);
+    
+    height: 700px;
+    margin: 50px;
+}
+
+
+#img_3{
+    padding: 5px 10%;
+    
+    background-image: url(fotos/cam_4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f7d9b2;
+    background-blend-mode: luminosity;
+    filter: blur(1px) brightness(2);
+    
+    height: 700px;
+    margin: 50px;
+}
+
+#img_4{
+    padding: 5px 10%;
+    
+    background-image: url(fotos/cam_6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f7d9b2;
+    background-blend-mode: luminosity;
+    filter: blur(1px) brightness(2);
+    
+    height: 700px;
+    margin: 50px;
+}
+
+
+#img_5{
+    padding: 5px 10%;
+    background-attachment: fixed;
+    background-image: url(fotos/cam_1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f7d9b2;
+    background-blend-mode: luminosity;
+    
+    height: 400px;
+    margin: 50px;
+}
+
+
+
+#equipo{
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    width: 600px;
+    background-color: #fff8f1ad;
+    padding: 10px;
+}
+
+#equipo > p {
+    margin: 1px;
+    font-family: letter-gothic-std, monospace;
+}
+
+.nombre{
+    font-style: italic;
+    font-weight: bold;
+    font-family: letter-gothic-std, monospace;
+}
+
+
+#agradecimientos {
+    position: absolute;
+    top: 780px;
+    right: 100px;
+    width: 300px;
+    padding: 10%;
+    background-color: #fffaf5e0;
+    padding: 10px;
+    text-align: right;
+    font-family: letter-gothic-std, monospace;
+}
+
+#agradecimientos > .nombre > p {
+    margin: 1px;
+    font-family: letter-gothic-std, monospace;
+}
+
+.texto-1{
+    font-family: 'Jost', sans-serif;
+}
+
+.texto-2{
+    font-family: 'Jost', sans-serif;
+}
+
+.cita{
+    font-family: letter-gothic-std, monospace;
+    padding: 7%;
+    background-color: #4b683b17;
+}
+
+.enfasis{
+    font-style: italic;
+}
+
+.firma{
+    font-family: letter-gothic-std, monospace;
+    text-align: right;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+.firma-final{
+    font-family: letter-gothic-std, monospace;
+    text-align: right;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
