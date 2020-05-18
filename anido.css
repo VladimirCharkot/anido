@@ -15,6 +15,7 @@
 }
 
 
+
 body {
     height: 100%;
 	width: 100%;
@@ -26,17 +27,13 @@ body {
 
 
 .cabecera{
-    background-color: #fff;
-    /*font-family: "Alegreya",serif;*/
-    /*font-family: 'Julius Sans One', sans-serif;*/
     font-family: letter-gothic-std, monospace;
-    font-style: normal;
-    font-weight: 0;
-    /*text-align: center;*/
-    display: table-cell;
+    
     position: fixed;
     top: 0;
     width: 100%;
+    
+    display: table-cell;
     z-index: 99;
 }
 
@@ -47,37 +44,22 @@ body {
 
 #img_nido{
     background-image: url(nido.png);
-    height: 120px;
     background-size: contain;
     background-repeat: no-repeat;
+    filter: opacity(0.5);
+    
     position: absolute;
     top: 30px;
-    width: 150px;
     left: 30px;
-    filter: opacity(0.3);
+    height: 120px;
+    width: 150px;
+    
     transition: 0.5s;
-}
-
-/*#colectivo{
-    width: max-content;
-    transform: translateY(-10px) scale(0.8);
-}
-
-#a-nido{
-    transform: translate(23px,-20px);
-}*/
-
-#colectivo{
-    display: inline;
-}
-
-#a-nido{
-    display: inline;
 }
 
 .titulo {
     letter-spacing: 2px;
-    font-size: 42px;
+    font-size: 4vw;
     margin: 0px;
     transition: 0.8s;
     display: inline;
@@ -452,6 +434,8 @@ h3{
     padding: 20px;
 }
 
+/* Efectos de la bibliografía... solo si hay :hover en el dispositivo */
+
 @media (any-hover: hover) {
     .biblio-descrip{
         max-height:1ch;
@@ -476,6 +460,14 @@ h3{
     }
 
 }
+
+
+/* Medidas de pantalla de celular */
+
+@media (width < 1000px) {
+    nav_btn { font-size: 2em; }
+}
+
 
 
 
