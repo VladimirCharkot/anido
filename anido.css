@@ -5,6 +5,15 @@
     src: url("./letter-gothic-std/LetterGothicStd.otf");
 }
 
+.gradienteNaranja{
+    background-image: linear-gradient(0deg, rgba(249, 179, 132, 1) 15%, rgba(249, 164, 107, 1) 30%, rgba(249, 149, 82, 1) 45%, rgba(249, 134, 57, 1) 55%, rgba(249, 119, 32, 1) 70%, rgba(249, 105, 8, 1) 85%, rgba(249, 100, 0, 1) 100%);
+}
+
+.gradienteCeleste{
+    background-image: linear-gradient(270deg, rgba(132, 202, 249, 1) 15%, rgba(161, 230, 255, 1) 35%, rgba(190, 255, 255, 1) 50%, rgba(219, 255, 255, 1) 65%, rgba(249, 255, 255, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    
+}
+
 
 body {
     height: 100%;
@@ -34,7 +43,6 @@ body {
 .cabecera_cont{
     padding: 50px 9%;
     transition: 0.5s;
-    background-color: #ffffff;
 }
 
 #img_nido{
@@ -111,7 +119,7 @@ body {
 /* Nav */
 
 .nav{
-    background-color: #f9b384;
+    background-color: #84CAF9;
     border-bottom: 2px solid rgba(0,0,0,.15);
     display: block;
     height: 40px;
@@ -299,6 +307,8 @@ h3{
     background-color: #f7d9b2;
     background-blend-mode: luminosity;
     
+    /*  background-position: right 40px; */
+    
     height: 400px;
     margin: 50px;
 }
@@ -374,4 +384,101 @@ h3{
     padding-right: 10%;
     padding-top: 10%;
     padding-bottom: 10%;
+}
+
+
+#despedida{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+#gracias{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+
+
+/* Bibliografia */
+
+.biblio-notas{
+    text-align: right;
+    font-family: 'Jost';
+    font-size: 0.85em;
+    padding-left: 40%;
+    padding-right: 2%;
+    margin-bottom: 100px;
+}
+
+
+
+.biblio-lista{
+    font-family: 'DM Mono', monospace;
+    margin: 0 20%;
+    font-size: 12px;
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+
+.biblio-item {
+    display:flex;
+    justify-content:flex-start;
+    padding:0.3rem 0;
+    order:0;
+}
+
+.biblio-item::before {  /* puntitos */
+    content:"";
+    display:block;
+    border-bottom:1px dotted black;
+    position:relative; top:-3px;
+    flex:1 1 auto;
+    margin:0 1rem;
+    order:1;
+}
+
+.biblio-item::after { /* autores */
+    content: attr(autor);
+    flex:0 0 auto;
+    order:2;
+    /*transform: scale(1.2);*/
+    text-decoration:underline;
+}
+
+.biblio-descrip{
+    padding: 20px;
+}
+
+@media (any-hover: hover) {
+    .biblio-descrip{
+        max-height:1ch;
+        transform:scaleY(0.1);
+        transform-origin:center top;
+        transition:transform 0.2s, max-height 0.5s;
+    }
+    
+    .biblio-elem:hover .biblio-descrip {
+        max-height:20em;
+        transform:scaleY(1);
+    }
+    
+    .biblio-lista:hover > ul > .biblio-elem { opacity:0.3; }
+    
+    
+    .biblio-elem:hover {
+        transition:background-color 0.3s;
+        /*background:rgba(255,255,100,0.15);*/
+        background: #d7eac940;
+        opacity:1 !important;
+    }
+
+}
+
+
+
+.negrita{
+    font-weight: bold;
 }

@@ -12,6 +12,7 @@ function scrollFunction() {
     }
     if (document.documentElement.scrollTop > 20 && document.documentElement.scrollTop < 120){
         document.getElementById("cabecera_cont").style.padding = 70-document.documentElement.scrollTop + "px 9%";
+        document.getElementById("img_nido").style.height = "0px"
     }
     
     if (document.documentElement.scrollTop > 120) {
@@ -19,7 +20,7 @@ function scrollFunction() {
         document.getElementById("nav").style.height = "0px"
         document.getElementById("titulo").style.fontSize = "22px";
         document.getElementById("titulo").style.textAlign = "left";
-        document.getElementById("img_nido").style.height = "0px"
+        document.getElementById("img_nido").style.height = "0px";
         var btns = document.getElementsByClassName("nav_btn");
         for (i in btns) if (btns[i].style) btns[i].style.fontSize = "0px";
         
