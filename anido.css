@@ -53,15 +53,15 @@ body {
     position: absolute;
     top: 30px;
     left: 30px;
-    height: 15vh;
-    width: 20vh;
+    height: 120px;
+    width: 150px;
     
     transition: 0.5s;
 }
 
 .titulo {
     letter-spacing: 2px;
-    font-size: 4vh;
+    font-size: 40px;
     margin-left: 90px;
     transition: 0.8s;
     display: inline;
@@ -81,10 +81,10 @@ body {
     background-color: #84CAF9;
     border-bottom: 2px solid rgba(0,0,0,.15);
     display: block;
-    height: 15vh;
+    height: 40px;
     transition: 0.8s;
     display: flex;
-    padding: 0 200px;
+    padding: 0 10%;
     align-items: center;
     font-size: 1em;
 }
@@ -411,7 +411,8 @@ h3{
 
 @media (any-hover: hover) {
     .biblio-descrip{
-        max-height:1ch;
+        max-height: 2ch;
+        font-size: 0.8em;
         transform:scaleY(0.1);
         transform-origin:center top;
         transition:transform 0.2s, max-height 0.5s;
