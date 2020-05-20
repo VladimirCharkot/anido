@@ -32,9 +32,11 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 20vh;
     
     display: table-cell;
     z-index: 99;
+    
 }
 
 .cabecera_cont{
@@ -51,15 +53,15 @@ body {
     position: absolute;
     top: 30px;
     left: 30px;
-    height: 120px;
-    width: 150px;
+    height: 15vh;
+    width: 20vh;
     
     transition: 0.5s;
 }
 
 .titulo {
     letter-spacing: 2px;
-    font-size: 4vw;
+    font-size: 4vh;
     margin-left: 90px;
     transition: 0.8s;
     display: inline;
@@ -71,31 +73,6 @@ body {
     margin: 0px;
 }
 
-.frase{
-    font-size: 13px;
-    line-height: 24px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    transition: 0.9s;
-    height: 50px;
-    margin: 0px;
-    /*text-align: center;*/
-}
-
-
-.topbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 280px;
-    /*right: 0;
-     width: 300px;
-     height: 100%;*/
-    background-color: #d7eac9;
-    background-blend-mode: multiply;
-    opacity: 0.4;
-}
-
 
 
 /* Nav */
@@ -104,13 +81,12 @@ body {
     background-color: #84CAF9;
     border-bottom: 2px solid rgba(0,0,0,.15);
     display: block;
-    height: 40px;
+    height: 15vh;
     transition: 0.8s;
-    /*display: grid;
-     grid-template-columns: repeat(7,1fr);*/
     display: flex;
     padding: 0 200px;
     align-items: center;
+    font-size: 1em;
 }
 
 .nav_btn {
@@ -118,7 +94,6 @@ body {
     /*display: inline-block;*/
     flex-grow: 1;
     text-align: center;
-    font-size: 12px;
     transition: 1s;
     display: table-cell;
 }
@@ -176,7 +151,7 @@ body {
 
 .texto_box{
     position: absolute;
-    top: 180px;
+    top: 20vh;
     /*padding: 0 5% 0 5%;*/
     margin: 0 10% 0 10%;
     background-color: #fff8f1ad;
@@ -210,7 +185,7 @@ body {
 
 
 .subtitulo_cont{
-    font-size: 22px;
+    font-size: 1.5em;
     text-align: left;
     margin-bottom: 20px;
     margin-top: 80px;
@@ -280,9 +255,15 @@ h3{
     background-image: url(fotos/cam_1.jpg);
 }
 
+
+.caja_texto{
+    
+}
+
 #creditos{
     position: relative;
     font-family: letter-gothic-std, monospace;
+    font-size: 0.8em;
 }
 
 #equipo{
@@ -324,6 +305,9 @@ h3{
     margin: 1px;
     /*font-family: letter-gothic-std, monospace;*/
 }
+
+
+
 
 .texto-1{
     font-family: 'Jost', sans-serif;
@@ -389,7 +373,6 @@ h3{
 .biblio-lista{
     font-family: 'DM Mono', monospace;
     margin: 0 20%;
-    font-size: 12px;
     display:flex;
     flex-flow:column nowrap;
 }
@@ -454,13 +437,20 @@ h3{
 
 /* Medidas de pantalla de celular */
 
-@media (width < 1000px) {
-    nav_btn { font-size: 2em; }
-    texto-box { margin: 0; }
-    body { background-color: antiquewhite; }
+@media (width < 1000px){
+    .texto_box { margin: 0px; }
+    .texto_box { font-size: 2em; }
+    #creditos { font-size: 0.6em; }
+    .biblio-lista{ margin: 0 2%; }
 }
 
-
+@media only screen
+and (max-device-width: 600px){
+    .texto_box { margin: 0px; }
+    .texto_box { font-size: 2em; }
+    #creditos { font-size: 0.6em; }
+    .biblio-lista{ margin: 0 2%; }
+}
 
 
 .negrita{
