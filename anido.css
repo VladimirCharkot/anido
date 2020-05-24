@@ -443,6 +443,8 @@ h3{
 and (max-device-width: 600px){
     .texto_box { margin: 0px; }
     .texto_box { font-size: 2em; }
+    #equipo{ font-size: 0.8rem; }
+    #agradecimientos{ font-size: 0.8rem; }
     /*#creditos { font-size: 0.6em; }*/
     .biblio-lista{ margin: 0 2%; }
 }
