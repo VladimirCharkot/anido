@@ -146,15 +146,15 @@ body {
 }
 
 .texto{
-    padding: 0 10% 0 10%;
+    padding: 5% 10% 5% 10%;
 }
 
 .texto-1{
-    padding: 0 10% 0 10%;
+    padding: 1% 10% 1% 10%;
 }
 
 .texto-2{
-    padding: 0 10% 0 10%;
+    padding: 1% 10% 1% 10%;
 }
 
 #titulo_cont{
@@ -166,7 +166,7 @@ body {
     background-image: url(nido.png);
     background-blend-mode: color-dodge;
     background-color: #fff8f1aa;
-    padding: 50px;
+    padding: 15%;
     background-size: 200%;
     background-position: center;
 }
@@ -175,9 +175,13 @@ body {
 .subtitulo_cont{
     font-size: 1.5em;
     text-align: left;
-    margin-bottom: 20px;
-    margin-top: 80px;
-    padding: 0 10% 0 10%;
+    background-image: url(nido.png);
+    background-blend-mode: color-dodge;
+    background-color: #ffffffe0;
+    padding: 50px;
+    padding-right: 200px;
+    background-size: 200%;
+    background-position: center;
 }
 
 
@@ -335,6 +339,7 @@ h3{
     font-family: 'Jost', sans-serif;
     text-align: center;
     font-size: 1.2em;
+    padding: 5%;
 }
 
 
@@ -351,6 +356,7 @@ h3{
     text-align: right;
     font-family: 'Jost';
     font-size: 0.85em;
+    padding-top: 1%;
     padding-left: 40%;
     padding-right: 2%;
     margin-bottom: 100px;
