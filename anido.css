@@ -171,8 +171,17 @@ body {
     background-position: center;
 }
 
+#subtitulo_cont{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    padding: 6vw;
+    font-size: 1.6rem;
+}
 
-.subtitulo_cont{
+
+.subtitulo{
     font-size: 1.5em;
     text-align: left;
     background-image: url(nido.png);
@@ -191,15 +200,6 @@ h3{
     letter-spacing: 0.5vw;
 }
 
-
-.subtitulo{
-    font-family: 'Jost', sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    padding: 6vw;
-    font-size: 1.6rem;
-}
 
 
 .img_filtro{
@@ -446,11 +446,18 @@ h3{
 and (max-device-width: 600px){
     .texto_box { margin: 0px; }
     .texto_box { font-size: 2.5rem; }
-    .subtitulo { }
-    #equipo{ font-size: 1.2rem; }
+    #subtitulo_cont { font-size: 2.5rem; }
+    #titulo_cont { font-size: 3.5rem; 
+		   padding: 5%; } 
+    .subtitulo { font-size: 2.5rem; }
+    .subtitulo { font-size: 2.8rem; }
+
     #agradecimientos{ font-size: 1.2rem; }
-    /*#creditos { font-size: 0.6em; }*/
+    #agradecimientos{ font-size: 1.2rem; }
+    #equipo{ font-size: 1.2rem; }
+
     .biblio-lista{ margin: 0 2%; }
+    .biblio-elem { padding: 2%; }
 }
 
 
