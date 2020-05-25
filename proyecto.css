@@ -41,7 +41,8 @@
 
 .subtitulo{
     font-family: 'DM Mono';
-    font-size: 1.5em;
+    font-size: 1em;
+    letter-spacing: 0.5vw;
     
     padding: 50px;
     padding-right: 200px;
