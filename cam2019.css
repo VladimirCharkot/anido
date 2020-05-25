@@ -327,6 +327,8 @@
 @media only screen
 and (max-device-width: 800px){
     .nav_btn { font-size: 1.2rem; }
+    .ref { color: blue; text-decoration: underline; }
+    .tippy-box[data-theme~='azure'] { font-size: 1.2rem }
 
     .texto_box { margin: 0px; }
     .texto_box { font-size: 1.8rem; }

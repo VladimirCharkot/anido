@@ -112,5 +112,7 @@ and (max-device-width: 800px){
     .nav_btn { font-size: 1.2rem; }
     #proyecto  { margin: 0; }
     :root { font-size: 10px; }
+    .ref { color: blue; text-decoration: underline; }
+    .tippy-box[data-theme~='azure'] { font-size: 1.2rem }
 }
 
