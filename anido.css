@@ -26,7 +26,8 @@
 
 .nombre{
     font-family: 'DM Mono';
-    font-size: 1.5em;
+    font-size: 1em;
+    letter-spacing: 0.5vw;
     text-align: right;
     
     padding: 50px;
@@ -44,6 +45,7 @@
 .texto_box {
     font-family: 'Jost', sans-serif;
     padding: 5% 15% 5% 15%;
+    text-align: justify;
 }
 
 .texto_box p {
