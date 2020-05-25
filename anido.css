@@ -1,466 +1,50 @@
-/*@import url('letter-gothic-std');*/
-
 @font-face {
     font-family: "letter-gothic-std";
     src: url("./letter-gothic-std/LetterGothicStd.otf");
 }
 
-.gradienteNaranja{
-    background-image: linear-gradient(0deg, rgba(249, 179, 132, 1) 15%, rgba(249, 164, 107, 1) 30%, rgba(249, 149, 82, 1) 45%, rgba(249, 134, 57, 1) 55%, rgba(249, 119, 32, 1) 70%, rgba(249, 105, 8, 1) 85%, rgba(249, 100, 0, 1) 100%);
-}
 
-.gradienteCeleste{
-    background-image: linear-gradient(270deg, rgba(132, 202, 249, 1) 15%, rgba(161, 230, 255, 1) 35%, rgba(190, 255, 255, 1) 50%, rgba(219, 255, 255, 1) 65%, rgba(249, 255, 255, 1) 85%, rgba(255, 255, 255, 1) 100%);
-    
-}
-
-* {
-    margin:0;
-    padding:0;
-}
-
-body {
-    
-}
-
-
-/* Header */
-
-.cabecera{
-    font-family: letter-gothic-std, monospace;
-    margin: auto 0 auto 0;
-    
-    z-index: 99;
-    
-    position: fixed;
-    top: 0px;
-    height: max-content;
-    width: 100%;
-}
-
-#titular{
-    display:flex;
-    height: 150px;
-    transition: 0.8s;
-}
-
-
-#img_nido{
-    background-image: url(nido.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    filter: opacity(0.5);
-    
-    margin: auto 0 auto 50px;
-    width: 150px;
-    height: 120px;
-    
-    transition: 1s;
-}
-
-.titulo {
-    letter-spacing: 2px;
-    font-size: 2rem;
-    
-    margin-top: auto;
-    margin-bottom: auto;
-    
-    transition: 0.8s;
-    display: inline;
-}
-
-.titulo a{
-    text-decoration: none;
-    color: #333;
-    margin: 0px;
-}
-
-
-
-/* Nav */
-
-.nav{
-    font-family: letter-gothic-std, monospace;
-    background-color: #84CAF9;
-    border-bottom: 2px solid rgba(0,0,0,.15);
-    
-    transition: 0.8s;
-    display: flex;
-    padding: 0 10%;
-    align-items: center;
-    font-size: 1em;
-    
-    height: 50px;
-}
-
-.nav_btn {
-    flex-grow: 1;
-    text-align: center;
-    transition: 1s;
-}
-
-.nav_btn :hover {
-    font-weight: 1000;
-}
-
-.nav_link{
-    text-decoration: none;
-    color: #333;
-    transition: 0.7s;
-}
-
-
-
-/* Bienvenida */
-
-#proximamente {
-    position: absolute;
-    top: 300px;
-    /*grid-row: 3;*/
-    width: 100%;
-    justify-content: space-around;
-    display: flex;
-}
-
-#img_anido{
-    margin: auto;
-    
-	background-image: url(anido.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-
-
-
-/* Texto */
-
-.texto_box{
-    /*grid-row: 3;*/
-    position: absolute;
+#equipo{
+    position: relative;
     top: 200px;
-    /*padding: 0 5% 0 5%;*/
     margin: 0 10% 0 10%;
     background-color: #fff8f1ad;
     font-size: 1.2rem;
 }
 
-.texto{
-    padding: 5% 10% 5% 10%;
-}
-
-.texto-1{
-    padding: 1% 10% 1% 10%;
-}
-
-.texto-2{
-    padding: 1% 10% 1% 10%;
-}
-
-#titulo_cont{
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 0 10px 0 10px;
+#equipo_titulo{
+    font-family: 'DM Mono';
     
-    background-image: url(nido.png);
-    background-blend-mode: color-dodge;
-    background-color: #fff8f1aa;
-    padding: 15%;
-    background-size: 200%;
-    background-position: center;
-}
-
-#subtitulo_cont{
-    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 20px;
-    letter-spacing: 1px;
-    padding: 6vw;
-    font-size: 1.6rem;
+    padding: 5% 10% 5% 10%;
+    
 }
 
 
-.subtitulo{
+.nombre{
+    font-family: 'DM Mono';
     font-size: 1.5em;
-    text-align: left;
+    text-align: right;
+    
+    padding: 50px;
+    padding-right: 200px;
+    
     background-image: url(nido.png);
     background-blend-mode: color-dodge;
     background-color: #ffffffe0;
-    padding: 50px;
-    padding-right: 200px;
     background-size: 200%;
     background-position: center;
-}
-
-
-h3{
-    /*font-family: letter-gothic-std, monospace;*/
-    font-family: 'DM Mono';
-    letter-spacing: 0.5vw;
-}
-
-
-
-.img_filtro{
-    padding: 5px 10%;
-    margin: 50px;
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /*background-attachment: fixed;*/
-    
-    background-color: #f7d9b2;
-    filter: blur(1px) brightness(2);
-    background-blend-mode: luminosity;
+    border-top: 5px black;
     
 }
 
-.sizer{
-    visibility: hidden;
-    width: 100%;
-}
-
-#img_1{
-    background-image: url(fotos/cam_3.jpg);
-    margin: 0px
-}
-
-
-#img_2{
-    background-image: url(fotos/cam_2.jpg);
-}
-
-
-#img_3{
-    background-image: url(fotos/cam_4.jpg);
-}
-
-
-#img_4{
-    background-image: url(fotos/cam_6.jpg);
-}
-
-
-#img_5{
-    background-image: url(fotos/cam_1.jpg);
-}
-
-
-.caja_texto{
-    
-}
-
-#creditos{
-    position: relative;
-    font-family: letter-gothic-std, monospace;
-    font-size: 0.9em;
-}
-
-#equipo{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    
-    width: 60vw;
-    background-color: #fff8f1ad;
-    padding: 10px;
-}
-
-#equipo > p {
-    margin: 1px;
-    
-}
-
-.nombre{
-    font-style: italic;
-    font-weight: bold;
-    /*font-family: letter-gothic-std, monospace;*/
-}
-
-
-#agradecimientos {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    
-    width: 30vw;
-    padding: 10%;
-    background-color: #fffaf5e0;
-    padding: 10px;
-    text-align: right;
-    /*font-family: letter-gothic-std, monospace;*/
-}
-
-#agradecimientos > .nombre > p {
-    margin: 1px;
-    /*font-family: letter-gothic-std, monospace;*/
-}
-
-
-
-
-.texto-1{
+.texto_box {
     font-family: 'Jost', sans-serif;
+    padding: 5% 15% 5% 15%;
 }
 
-.texto-2{
-    font-family: 'Jost', sans-serif;
-}
-
-.cita{
-    font-family: letter-gothic-std, monospace;
-    padding: 7%;
-    background-color: #4b683b17;
-}
-
-.enfasis{
-    font-style: italic;
-}
-
-.firma{
-    font-family: letter-gothic-std, monospace;
-    text-align: right;
-    padding-right: 5%;
-    padding-bottom: 1%;
-}
-
-.firma-final{
-    font-family: letter-gothic-std, monospace;
-    text-align: right;
-    padding-right: 10%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-
-
-#despedida{
-    font-family: 'Jost', sans-serif;
-    text-align: center;
-    font-size: 1.2em;
-    padding: 5%;
-}
-
-
-#gracias{
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-
-
-/* Bibliografia */
-
-.biblio-notas{
-    text-align: right;
-    font-family: 'Jost';
-    font-size: 0.85em;
-    padding-top: 1%;
-    padding-left: 40%;
-    padding-right: 2%;
-    margin-bottom: 100px;
-}
-
-
-
-.biblio-lista{
-    font-family: 'DM Mono', monospace;
-    margin: 0 20%;
-    display:flex;
-    flex-flow:column nowrap;
-}
-
-
-.biblio-item {
-    display:flex;
-    justify-content:flex-start;
-    padding:0.3rem 0;
-    order:0;
-}
-
-.biblio-item::before {  /* puntitos */
-    content:"";
-    display:block;
-    border-bottom:1px dotted black;
-    position:relative; top:-3px;
-    flex:1 1 auto;
-    margin:0 1rem;
-    order:1;
-}
-
-.biblio-item::after { /* autores */
-    content: attr(autor);
-    flex:0 0 auto;
-    order:2;
-    /*transform: scale(1.2);*/
-    text-decoration:underline;
-    max-width: 40%;
-    font-size: 0.8em;
-    text-align: right;
-}
-
-.biblio-descrip{
-    padding: 20px;
-}
-
-/* Efectos de la bibliografía... solo si hay :hover en el dispositivo */
-
-@media (any-hover: hover) {
-    .biblio-descrip{
-        max-height: 2ch;
-        font-size: 0.8em;
-        transform:scaleY(0.1);
-        transform-origin:center top;
-        transition:transform 0.2s, max-height 0.5s;
-    }
-    
-    .biblio-elem:hover .biblio-descrip {
-        max-height:20em;
-        transform:scaleY(1);
-    }
-    
-    .biblio-lista:hover > ul > .biblio-elem { opacity:0.3; }
-    
-    
-    .biblio-elem:hover {
-        transition:background-color 0.3s;
-        /*background:rgba(255,255,100,0.15);*/
-        background: #d7eac940;
-        opacity:1 !important;
-    }
-
-}
-
-
-/* Medidas de pantalla de celular */
-
-@media (width < 1000px){
-    .texto_box { margin: 0px; }
-    .texto_box { font-size: 2em; }
-    /*#creditos { font-size: 0.6em; }*/
-    .biblio-lista{ margin: 0 2%; }
-}
-
-@media only screen
-and (max-device-width: 600px){
-    .texto_box { margin: 0px; }
-    .texto_box { font-size: 2.5rem; }
-    #subtitulo_cont { font-size: 2.5rem; }
-    #titulo_cont { font-size: 3.5rem; 
-		   padding: 5%; } 
-    .subtitulo { font-size: 2.5rem; }
-    .subtitulo { font-size: 2.8rem; }
-
-    #agradecimientos{ font-size: 1.2rem; }
-    #agradecimientos{ font-size: 1.2rem; }
-    #equipo{ font-size: 1.2rem; }
-
-    .biblio-lista{ margin: 0 2%; }
-    .biblio-elem { padding: 2%; }
-}
-
-
-.negrita{
-    font-weight: bold;
+.texto_box p {
+    padding: 2vh;
 }

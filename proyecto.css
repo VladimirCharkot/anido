@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: "letter-gothic-std";
+    src: url("./letter-gothic-std/LetterGothicStd.otf");
+}
+
+#proyecto{
+    position: relative;
+    top: 200px;
+    margin: 0 10% 0 10%;
+    background-color: #fff8f1ad;
+    font-size: 1.2rem;
+}
+
+
+#itinerante_titulo{
+    font-family: 'DM Mono';
+    
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 10px 0 10px;
+    
+    background-image: url(fotos/clase.jpg);
+    background-blend-mode: color-dodge;
+    background-color: #fff8f1aa;
+    padding: 15%;
+    background-size: 100%;
+    background-position: left center;
+}
+
+#equipo {
+    font-family: letter-gothic-std, monospace;
+    text-align: right;
+    
+    padding: 5%;
+    background-color: #fffaf5e0;
+    
+}
+
+.subtitulo{
+    font-family: 'DM Mono';
+    font-size: 1.5em;
+    
+    padding: 50px;
+    padding-right: 200px;
+    
+    background-image: url(fotos/clase.jpg);
+    background-blend-mode: color-dodge;
+    background-color: #ffffffe0;
+    background-size: 200%;
+    background-position: top center;
+    border-top: 5px black;
+}
+
+
+
+.texto_box {
+    font-family: 'Jost', sans-serif;
+    text-align: justify;
+    padding: 5% 15% 5% 15%;
+}
+
+.texto {
+    
+}
+
+.cita {
+    font-family: 'Jost', sans-serif;
+    background-color: #4b683b17;
+    font-size: 0.9em;
+    padding: 5%;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.firma-final{
+    font-family: letter-gothic-std, monospace;
+    text-align: right;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}

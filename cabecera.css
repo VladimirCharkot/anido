@@ -1,0 +1,122 @@
+/*@import url('letter-gothic-std');*/
+
+@font-face {
+    font-family: "letter-gothic-std";
+    src: url("./letter-gothic-std/LetterGothicStd.otf");
+}
+
+.gradienteNaranja{
+    background-image: linear-gradient(0deg, rgba(249, 179, 132, 1) 15%, rgba(249, 164, 107, 1) 30%, rgba(249, 149, 82, 1) 45%, rgba(249, 134, 57, 1) 55%, rgba(249, 119, 32, 1) 70%, rgba(249, 105, 8, 1) 85%, rgba(249, 100, 0, 1) 100%);
+}
+
+.gradienteCeleste{
+    background-image: linear-gradient(270deg, rgba(132, 202, 249, 1) 15%, rgba(161, 230, 255, 1) 35%, rgba(190, 255, 255, 1) 50%, rgba(219, 255, 255, 1) 65%, rgba(249, 255, 255, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    
+}
+
+
+/* Header */
+
+.cabecera{
+    font-family: letter-gothic-std, monospace;
+    margin: auto 0 auto 0;
+    background-color: white;
+    
+    z-index: 99;
+    
+    position: fixed;
+    top: 0px;
+    height: max-content;
+    width: 100%;
+}
+
+#titular{
+    display:flex;
+    height: 150px;
+    transition: 0.8s;
+    padding-left: 5%;
+}
+
+
+#img_nido{
+    background-image: url(nido.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: opacity(0.8);
+    
+    margin: auto 0 auto 50px;
+    width: 150px;
+    height: 120px;
+    
+    transition: 1s;
+}
+
+.titulo {
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    transform: translateY(-10px);
+    
+    transition: 0.8s;
+    display: inline;
+}
+
+.titulo a{
+    text-decoration: none;
+    color: #333;
+    margin: 0px;
+}
+
+
+
+/* Nav */
+
+.nav{
+    font-family: letter-gothic-std, monospace;
+    background-color: #84CAF9;
+    border-bottom: 2px solid rgba(0,0,0,.15);
+    
+    transition: 0.8s;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    font-size: 1em;
+    
+    height: 50px;
+}
+
+.nav_btn {
+    flex-grow: 1;
+    text-align: center;
+    transition: 1s;
+}
+
+.nav_btn :hover {
+    font-weight: 1000;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: #333;
+    transition: 0.7s;
+}
+
+
+
+/* bienvenida.css */
+
+/* proyecto.css */
+
+/* cam2019.css */
