@@ -2,10 +2,10 @@
 
 .texto_box{
     position: absolute;
-    top: 200px;
+    top: 130px;
     margin: 0 10% 0 10%;
     background-color: #fff8f1ad;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .texto{
@@ -21,7 +21,7 @@
 }
 
 #titulo_cont{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 20px;
     padding: 0 10px 0 10px;
@@ -29,7 +29,8 @@
     background-image: url(fotos/cam_3.jpg);
     background-blend-mode: color-dodge;
     background-color: #fff8f1aa;
-    padding: 15%;
+    padding: 10vw;
+    padding-top: 8vw;
     background-size: 200%;
     background-position: center top;
 }
@@ -40,12 +41,12 @@
     margin-bottom: 20px;
     letter-spacing: 1px;
     padding: 6vw;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 
 .subtitulo{
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: left;
     background-image: url(fotos/cam_3.jpg);
     background-blend-mode: color-dodge;

@@ -6,7 +6,7 @@ window.original_titulo_transf = document.getElementById("titulo").style.transfor
 window.original_titular_fontsize = document.getElementById("titular").style.height;
 window.original_nidito_height = document.getElementById("img_nido").style.height;
 window.original_nidito_width = document.getElementById("img_nido").style.width
-window.original_nav_height = document.getElementsByClassName("nav")[0].style.height = "50px";
+window.original_nav_height = document.getElementsByClassName("nav")[0].style.height;
 
 
 function scrollFunction() {
