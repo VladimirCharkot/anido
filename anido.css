@@ -63,7 +63,7 @@
 
 @media only screen
 and (max-device-width: 800px){
-    .nav_btn { font-size: 1.2rem; }
+    .nav_btn { font-size: 1.5rem; }
     #equipo { margin: 0; }
     :root { font-size: 12px; }
 }
