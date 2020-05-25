@@ -181,9 +181,6 @@
     background-color: #4b683b17;
 }
 
-.enfasis{
-    font-style: italic;
-}
 
 .firma{
     font-family: letter-gothic-std, monospace;
@@ -205,13 +202,31 @@
     font-family: 'Jost', sans-serif;
     text-align: center;
     font-size: 1.2em;
-    padding: 5%;
+    padding: 5% 15%;
 }
 
 
 #gracias{
     font-size: 1.8em;
     font-weight: bold;
+}
+
+
+/* Tooltip referencias */
+
+.tippy-box[data-theme~='azure'] {
+    background-color: #f0fffffb;
+    font-size: 0.8rem;
+    font-family: 'Jost', sans-serif;
+    color: black;
+    border: solid 3px #BDDDF2;
+    padding: 4%;
+}
+.tippy-box[data-theme~='azure'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: #BDDDF2;
+}
+.tippy-box[data-theme~='azure'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: #BDDDF2;
 }
 
 
@@ -301,10 +316,10 @@
 
 /* Medidas de pantalla de celular */
 
+/*
 @media (width < 1000px){
     .texto_box { margin: 0px; }
     .texto_box { font-size: 2em; }
-    /*#creditos { font-size: 0.6em; }*/
     .biblio-lista{ margin: 0 2%; }
 }
 
@@ -325,9 +340,6 @@ and (max-device-width: 600px){
     .biblio-lista{ margin: 0 2%; }
     .biblio-elem { padding: 2%; }
 }
+*/
 
-
-.negrita{
-    font-weight: bold;
-}
 
