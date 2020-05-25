@@ -9,7 +9,7 @@
     top: 130px;
     margin: 0 10% 0 10%;
     background-color: #fff8f1ad;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #equipo_titulo{
@@ -44,6 +44,7 @@
 
 .texto_box {
     font-family: 'Jost', sans-serif;
+    font-size: 1em;
     padding: 5% 15% 5% 15%;
     text-align: justify;
 }
@@ -58,4 +59,11 @@
     padding-right: 10%;
     padding-top: 10%;
     padding-bottom: 10%;
+}
+
+@media only screen
+and (max-device-width: 800px){
+    .nav_btn { font-size: 1.2rem; }
+    #equipo { margin: 0; }
+    :root { font-size: 12px; }
 }

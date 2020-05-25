@@ -4,12 +4,14 @@
     src: url("./letter-gothic-std/LetterGothicStd.otf");
 }
 
+
+
 #proyecto{
     position: relative;
     top: 130px;
     margin: 0 10% 0 10%;
     background-color: #fff8f1ad;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -79,6 +81,7 @@
     text-align: right;
     padding-right: 5%;
     padding-bottom: 1%;
+    font-size: 0.9em;
 }
 
 .firma-final{
@@ -102,5 +105,12 @@
 }
 .tippy-box[data-theme~='azure'][data-placement^='top'] > .tippy-arrow::before {
     border-top-color: #BDDDF2;
+}
+
+@media only screen
+and (max-device-width: 800px){
+    .nav_btn { font-size: 1.2rem; }
+    #proyecto  { margin: 0; }
+    :root { font-size: 10px; }
 }
 
