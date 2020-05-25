@@ -321,25 +321,28 @@
     .texto_box { margin: 0px; }
     .texto_box { font-size: 2em; }
     .biblio-lista{ margin: 0 2%; }
-}
+}*/
+
 
 @media only screen
 and (max-device-width: 600px){
+    .nav_btn { font-size: 1.2rem; }
+
     .texto_box { margin: 0px; }
-    .texto_box { font-size: 2.5rem; }
-    #subtitulo_cont { font-size: 2.5rem; }
-    #titulo_cont { font-size: 3.5rem;
+    .texto_box { font-size: 1.8rem; }
+    #subtitulo_cont { font-size: 1.9rem; }
+    #titulo_cont { font-size: 2rem;
         padding: 5%; }
-    .subtitulo { font-size: 2.5rem; }
-    .subtitulo { font-size: 2.8rem; }
+    /*.subtitulo { font-size: 2.5rem; }
+    .subtitulo { font-size: 2.8rem; }*/
     
     #agradecimientos{ font-size: 1.2rem; }
     #agradecimientos{ font-size: 1.2rem; }
     #equipo{ font-size: 1.2rem; }
     
-    .biblio-lista{ margin: 0 2%; }
+    .biblio-lista{ margin: 2% 5%; }
     .biblio-elem { padding: 2%; }
 }
-*/
+
 
 

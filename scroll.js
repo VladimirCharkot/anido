@@ -7,7 +7,7 @@ window.original_titular_fontsize = document.getElementById("titular").style.heig
 window.original_nidito_height = document.getElementById("img_nido").style.height;
 window.original_nidito_width = document.getElementById("img_nido").style.width
 window.original_nav_height = document.getElementsByClassName("nav")[0].style.height;
-
+window.original_btn_fontsize = document.getElementsByClassName("nav_btn")[0].style.fontSize;
 
 function scrollFunction() {
     if (document.documentElement.scrollTop < 40){
@@ -20,7 +20,7 @@ function scrollFunction() {
         
         document.getElementsByClassName("nav")[0].style.height = window.original_nav_height;
         var btns = document.getElementsByClassName("nav_btn");
-        for (i in btns) if (btns[i].style) btns[i].style.fontSize = "1em";
+        for (i in btns) if (btns[i].style) btns[i].style.fontSize = window.original_btn_fontsize;
     }
     if (document.documentElement.scrollTop > 40) {
         document.getElementById("titulo").style.transform = "translateY(0)";
