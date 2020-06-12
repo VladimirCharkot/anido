@@ -1,5 +1,13 @@
 /* Texto */
 
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar {
+    background-color: lavender;
+}
+
 .texto_box{
     position: absolute;
     top: 130px;
@@ -35,6 +43,7 @@
 #titulo_cont{
     font-family: 'DM Mono';
     letter-spacing: 0.5vw;
+    position: relative;
     
     font-size: 1.2rem;
     text-align: center;
@@ -42,11 +51,11 @@
     padding: 10vw;
     padding-top: 8vw;
     
-    background-image: url(fotos/cam_4.jpg);
+    background-image: url(fotos/craig.jpg);
     background-blend-mode: color-dodge;
     background-color: #fff8f1aa;
-    background-size: 200%;
-    background-position: 100% 65%;
+    background-size: 120%;
+    background-position: 60% 25%;
 }
 
 #subtitulo_cont{
@@ -58,6 +67,38 @@
     padding: 6vw;
     font-size: 1.2rem;
 }
+
+
+
+
+
+/*#descarga_wrap{
+    display: flex;
+    padding: 0px 200px;
+    flex-direction: row-reverse;
+}*/
+
+#descarga{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(161, 108, 40, 0.3);
+    border-radius: 20px;
+    padding: 1vw;
+    
+    width: min-content;
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+}
+
+#descargar_pdf{
+    width: 4vw;
+    height: 4vw;
+}
+
+
+
 
 
 #despedida{

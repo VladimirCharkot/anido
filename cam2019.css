@@ -30,6 +30,8 @@
     padding: 10vw;
     padding-top: 8vw;
     
+    position: relative;
+    
     background-image: url(fotos/cam_3.jpg);
     background-blend-mode: color-dodge;
     background-color: #fff8f1aa;
@@ -46,6 +48,29 @@
     padding: 6vw;
     font-size: 1.2rem;
 }
+
+
+
+#descarga{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(161, 108, 40, 0.3);
+    border-radius: 20px;
+    padding: 1vw;
+    
+    width: min-content;
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+}
+
+#descargar_pdf{
+    width: 4vw;
+    height: 4vw;
+}
+
+
 
 
 .subtitulo{
