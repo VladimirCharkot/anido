@@ -1,0 +1,94 @@
+/* Texto */
+
+.texto_box{
+    position: absolute;
+    top: 130px;
+    margin: 0 10% 0 10%;
+    background-color: #fff8f1ad;
+    font-size: 1rem;
+}
+
+.texto{
+    padding: 5% 10% 5% 10%;
+}
+
+.texto-1{
+    font-family: 'Jost', sans-serif;
+    padding: 1% 15% 1% 15%;
+    text-align: justify;
+}
+
+.texto-2{
+    font-family: 'Jost', sans-serif;
+    padding: 1% 15% 1% 15%;
+    text-align: justify;
+}
+
+.texto-1:hover{
+    background-color: #eff3e9;
+}
+
+.texto-2:hover{
+    background-color: #eff3e9;
+}
+
+#titulo_cont{
+    font-family: 'DM Mono';
+    letter-spacing: 0.5vw;
+    
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10vw;
+    padding-top: 8vw;
+    
+    background-image: url(fotos/cam_4.jpg);
+    background-blend-mode: color-dodge;
+    background-color: #fff8f1aa;
+    background-size: 200%;
+    background-position: 100% 65%;
+}
+
+#subtitulo_cont{
+    font-family: 'Jost', sans-serif;
+    
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    padding: 6vw;
+    font-size: 1.2rem;
+}
+
+
+#despedida{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5% 15%;
+}
+
+
+#gracias{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.firma-final{
+    font-family: letter-gothic-std, monospace;
+    text-align: right;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+@media only screen
+and (max-device-width: 800px){
+    .nav_btn { font-size: 1.2rem; }
+    
+    .texto_box { margin: 0px; }
+    .texto_box { font-size: 1.8rem; }
+    #subtitulo_cont { font-size: 1.9rem; }
+    #titulo_cont { font-size: 2rem;
+        padding: 5%; }
+}
