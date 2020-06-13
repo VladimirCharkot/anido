@@ -12,23 +12,25 @@
 
 	<body>
         
-        <div class="container">
+        <div>
             
-            <div id="cabecera" class="cabecera">
+            <!-- Cabecera -->
+            <div id="cabecera">
                 
                 <div id="titular">
-                    <div id="img_nido"><image source="nido.png" class="sizer" style="height: 120px;"></image></div>
-                    <h1 id="titulo" class="titulo"><a href="https://www.colectivoanido.com/" title="Colectivo A-Nido" rel="home">Colectivo A-Nido</a></h1>
+                    <div id="nidito"><image source="nido.png" class="sizer" style="height: 120px;"></image></div>
+                    <h1><a href="https://www.colectivoanido.com/" title="Colectivo A-Nido" rel="home">Colectivo A-Nido</a></h1>
                 </div>
                 
-                <div id="nav" class="nav">
-                    <div id="" class="nav_btn"><a class="nav_link" href="anido.html">A-Nido</a></div>
-                    <div id="" class="nav_btn"><a class="nav_link" href="proyecto.html">El proyecto</a></div>
-                    <div id="" class="nav_btn"><a class="nav_link" href="cam2019.html">CAM 2019</a></div>
-                    <div id="" class="nav_btn"><a class="nav_link" href="contribuir.html">Contribuir</a></div>
-                </div>
+                <div id="nav" class="nav"></div>
                 
             </div> <!-- Cierra cabecera -->
+            
+            <!-- Tooltips y referencias -->
+            <script src="https://unpkg.com/@popperjs/core@2"></script>
+            <script src="https://unpkg.com/tippy.js@6"></script>
+            <script src="menu.js"></script>
+            <script src="scroll.js"></script>
             
 
             <div id="proximamente">
